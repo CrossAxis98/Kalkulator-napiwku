@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kalkulator napiwku</string>
+    <string name="ocenaObslugi">Jak oceniasz jakość obsługi?</string>
+    <string name="ocenaJedzenia">Czy jedzenie było smaczne?</string>
+    <string name="przyciskOcen">Oceń </string>
+    <string name="infromacja">*Uwaga! Na podstawie podanej oceny ustalana jest sugerowana procentowa wartość napiwku. </string>
+    <string name="koszt">Jaki był koszt zamówienia?</string>
+    <string name="wprowadzKwote">Wprowadź kwotę</string>
+    <string name="procentNapiwku">Sugerowana wartość procentowa napiwku: </string>
+    <string name="napiwek">% kwoty</string>
+    <string name="oblicz">Oblicz</string>
+    <string name="kwotaNapiwku">Kwota napiwku:</string>
+    <string name="razemDoZapłaty">Razem do zapłaty:</string>
+</resources>

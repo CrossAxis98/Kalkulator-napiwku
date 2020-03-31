@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear1"
+        >
+    <TextView
+        android:id="@+id/obslugaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD607"
+        android:text="@string/ocenaObslugi"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:adjustViewBounds="true"
+        />
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:id="@+id/rating"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:saveEnabled="true"
+
+            android:numStars="5"
+            android:layout_gravity="center"
+
+             />
+
+        <Button
+        android:id="@+id/ocenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/przyciskOcen"
+        android:layout_gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/informacjaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/infromacja" />
+
+    <TextView
+        android:id="@+id/jedzenieTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD607"
+        android:text="@string/ocenaJedzenia"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerOcenaJedzenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/kosztTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD607"
+            android:layout_weight="2"
+            android:text="@string/koszt"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/kosztEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:autofillHints=""
+            android:hint="@string/wprowadzKwote"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:id="@+id/linear3"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/napiwekTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD607"
+            android:layout_weight="2"
+            android:text="@string/procentNapiwku"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/napiwekEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:autofillHints=""
+            android:hint="@string/napiwek"
+            android:inputType="numberDecimal" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonOblicz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear3"
+        android:layout_centerHorizontal="true"
+        android:text="@string/oblicz"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewKwotaNapiwku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOblicz"
+        android:text="@string/kwotaNapiwku"
+
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewKwotaCalkowita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewKwotaNapiwku"
+        android:text="@string/razemDoZapłaty"
+        android:textSize="30sp"
+
+        android:textStyle="bold" />
+
+</RelativeLayout>
+</ScrollView>
+
+
